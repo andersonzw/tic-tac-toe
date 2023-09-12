@@ -1,0 +1,62 @@
+:root {
+    box-sizing: border-box;
+
+}
+body {
+    min-height: 100%;
+    background-color: rgb(202, 202, 202);
+    text-align: center;
+    margin: 0;
+}
+.turn-p {
+
+    display: none;
+}
+
+
+.container {
+    width: 60%;
+    max-width: 850px;
+    margin: 100px auto 0 auto;
+    border: red 1px solid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+    gap: 5px;
+    display: none;
+}
+
+.cell {
+    background: white;
+    outline: 1px black  solid;
+    font-size: large;
+
+
+}
+
+
+.cell:hover {
+    outline: 1px solid red;
+}
+
+.cell.naught {
+background: rgb(181, 238, 181);
+}
+.cell.cross {
+background: rgb(202, 202, 243);
+}
+
+
+.winner-div {
+    margin-top: 40vh;
+    display: inline-block;
+    font-size: 5rem;
+}
+
+
+#reset {
+    position: fixed;
+    top: 10px; right:20px;
+    font-size: 1rem;
+    padding: 5px 20px;
+}
