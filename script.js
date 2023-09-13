@@ -42,12 +42,12 @@ function updateTurnName() {
     }
 
 
-    else if (turnIndicator.textContent === 'Sammie') {
-        currentTurnName = 'Marie'
+    else if (turnIndicator.textContent === 'Player A') {
+        currentTurnName = 'Player B'
         turnIndicator.textContent = currentTurnName
     }
-    else if (turnIndicator.textContent === 'Marie'){
-        currentTurnName = 'Sammie'
+    else if (turnIndicator.textContent === 'Player B'){
+        currentTurnName = 'Player A'
         turnIndicator.textContent = currentTurnName
     }
 }
@@ -59,10 +59,10 @@ function selectCell() {
     }
     else if  (currentTurn === "cross")
         {this.classList.add("cross")
-        currentTurn = 'naught'
+        currentTurn = 'circle'
     }
-    else if (currentTurn === "naught")
-        {this.classList.add("naught")
+    else if (currentTurn === "circle")
+        {this.classList.add("circle")
         currentTurn = 'cross'
 
     }
